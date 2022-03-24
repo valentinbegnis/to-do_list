@@ -1,0 +1,16 @@
+.tasks-counter-container {
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TodoCounter {
+  font-size: 1.3rem;
+}
+
+.total-tasks {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #777676;
+}

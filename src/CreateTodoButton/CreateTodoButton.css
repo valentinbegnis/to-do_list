@@ -1,0 +1,22 @@
+.button-container {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.CreateTodoButton {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    color: #ff5f80;
+    transform: rotate(0);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+  
+.CreateTodoButton:hover {
+    transform: rotate(270deg); 
+}
