@@ -1,2 +1,3 @@
-# to-do_list
-To Do List using React.js
+# To Do List (not finished yet 🛠) 
+
+A to do list app using **React.js** and **LocalStorage** for persisting data
