@@ -1,6 +1,6 @@
 .button-container {
     display: flex;
-    margin-top: 30px;
+    margin: 30px 0 10px 0;
     width: 100%;
     justify-content: center;
     /* align-items: center; */
@@ -13,7 +13,7 @@
     border-radius: 50%;
     color: #ff5f80;
     transform: rotate(0);
-    transition: .5s ease-in-out7;
+    transition: .4s ease-in-out;
     cursor: pointer;
 }
   

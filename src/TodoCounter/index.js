@@ -7,8 +7,7 @@ function TodoCounter() {
   
   return (
     <div className='tasks-counter-container'>
-      <h2 className="TodoCounter">You have completed {completedTodos} tasks</h2>
-      <h2 className='total-tasks'>Total tasks: {totalTodos}</h2>
+      <h2 className="TodoCounter">Completed tasks: <span>{completedTodos} of {totalTodos}</span></h2>
     </div>
   );
 }

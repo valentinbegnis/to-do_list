@@ -1,6 +1,6 @@
 .TodoSearch-container {
   display: flex;
-  margin-top: 20px;
+  margin-bottom: 10px;
   flex-direction: column;
   align-items: center;
 }
@@ -12,10 +12,12 @@
   border: none;
   border-radius: 5px;
   outline: none;
+  font-size: 1.2rem;
+  color: #afafaf;
   background-color: #3f3f3f;
 }
   
-.TodoSearch::placeholder {
+/* .TodoSearch::placeholder {
   font-size: 1.2rem;
   color: #afafaf;
-}
+} */

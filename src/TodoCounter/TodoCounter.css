@@ -6,11 +6,12 @@
 }
 
 .TodoCounter {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  color: #a5a5a5
 }
 
-.total-tasks {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #777676;
+.TodoCounter span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #d8d8d8
 }
