@@ -21,10 +21,18 @@ function AppUI () {
     return (
         <React.Fragment>
             <Header />
-            {searchedTodos.length ? <TodoSearch /> : null}
+            {
+                localStorage.getItem('TODOS_V1') !== '[]'
+                    ? <TodoSearch /> 
+                    : null
+            }
 
             <TodoList>
-                {!searchedTodos.length && <EmptyTodos />}
+                {
+                    localStorage.getItem('TODOS_V1') === '[]'
+                        ? <EmptyTodos />
+                        : null
+                }
 
                 { 
                     searchedTodos.map(todo => (
@@ -39,11 +47,14 @@ function AppUI () {
                 }
             </TodoList>
 
-            {openModal && (
-                <Modal>
-                    <TodoForm />
-                </Modal>
-            )}
+            {
+                openModal && 
+                (
+                    <Modal>
+                        <TodoForm />
+                    </Modal>
+                )
+            }
             
             <CreateTodoButton setOpenModal={setOpenModal} />
         </React.Fragment>
