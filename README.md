@@ -1,3 +1,3 @@
-# To Do List (not finished yet 🛠) 
+# To Do List 📝
 
-A to do list app using **React.js** and **LocalStorage** for persisting data
+A to do list app using **React.js** ⚛ and **LocalStorage** 💾 to persist data
