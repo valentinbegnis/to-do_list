@@ -10,7 +10,7 @@ function CreateTodoButton (props) {
     return(
         <div className='button-container'>
             <BsFillPlusCircleFill 
-                className='CreateTodoButton'
+                className='CreateTodoButton' 
                 onClick={ onClickButton }
             />
         </div>

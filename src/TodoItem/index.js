@@ -7,7 +7,7 @@ function TodoItem (props) {
     return (
         <li className="TodoItem">
             <span 
-                className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`}
+                className={`Icon-check ${props.completed && 'Icon-check--active'}`}
                 onClick={props.onComplete}
             >
                 <BsCheck className='check-size'/>
@@ -18,7 +18,7 @@ function TodoItem (props) {
             </p>
 
             <span
-                className="Icon Icon-delete"
+                className="Icon-delete"
                 onClick={props.onDelete}
             >
                 <ImCross className='cross-size'/>

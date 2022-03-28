@@ -1,3 +1,11 @@
+:root {
+  --background-color: #252525;
+  --primary-text-color: #e7e7e7;
+  --secondary-text-color: #777676;
+  --contrast-color: #ff5f80;
+  --icons-color: #777777;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +18,16 @@ html {
 
 body {
   font-size: 62.5%;
-  background: #252525;
-  color :#e7e7e7;
-  
+  background-color: var(--background-color);
+  color :var(--primary-text-color);
 }
 
 #root {
   display: flex;
-  flex-direction: column;
+  margin: 0 auto;
   position: relative;
   width: 90%;
   min-height: 100vh;
-  margin: 0 auto;
+  flex-direction: column;
   justify-content: center;
 }

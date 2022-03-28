@@ -4,10 +4,12 @@ import './TodoForm.css';
 
 function TodoForm () {
     const [newTodoValue, setNewTodoValue] = useState('');
+    // const [newId, setNewId] = useState(0);
 
     const {
         addTodo,
-        setOpenModal
+        setOpenModal,
+        setActiveClass
     } = useContext(TodoContext);
 
     const onChange = (event) => {
@@ -16,10 +18,12 @@ function TodoForm () {
 
     const onCancel = () => {
         setOpenModal(false);
+        setActiveClass(false);
     }
 
     const onSubmit = (event) => {
         event.preventDefault();
+        // setNewId(newId + 1);
         addTodo(newTodoValue);
         setOpenModal(false);
     }
@@ -32,7 +36,7 @@ function TodoForm () {
                 onChange={onChange}
                 placeholder='Finish my homework'
             />
-            <div>
+            <div className='buttons-container'>
                 <button 
                     onClick={onCancel}
                     type='button'

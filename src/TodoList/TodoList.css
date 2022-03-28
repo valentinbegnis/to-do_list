@@ -1,6 +1,30 @@
 .list-container {
-  margin-top: 10px;
-  height: 220px;
-  border-radius: 5px;
-  overflow-y: scroll;
+  margin: 0 auto 30px;
+  max-height: 110px;
+  overflow-y: auto; 
+}
+
+@media (min-height: 640px) {
+  .list-container {
+    max-height: 260px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-height: 740px) {
+  .list-container {
+    max-height: 370px;
+  }
+}
+
+@media (min-height: 1024px) {
+  .list-container {
+    max-height: 600px;
+  }
+}
+
+@media (min-width: 600px) {
+  .list-container {
+    max-width: 540px;
+  }
 }
