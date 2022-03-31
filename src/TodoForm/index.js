@@ -4,12 +4,11 @@ import './TodoForm.css';
 
 function TodoForm () {
     const [newTodoValue, setNewTodoValue] = useState('');
-    // const [newId, setNewId] = useState(0);
+    const [newPlaceholder, setNewPlaceholder] = useState('Finish my homework');
 
     const {
         addTodo,
-        setOpenModal,
-        setActiveClass
+        setOpenModal
     } = useContext(TodoContext);
 
     const onChange = (event) => {
@@ -18,14 +17,16 @@ function TodoForm () {
 
     const onCancel = () => {
         setOpenModal(false);
-        setActiveClass(false);
     }
 
     const onSubmit = (event) => {
         event.preventDefault();
-        // setNewId(newId + 1);
-        addTodo(newTodoValue);
-        setOpenModal(false);
+        if (newTodoValue !== '') {
+            addTodo(newTodoValue);
+            setOpenModal(false);
+        } else {
+            setNewPlaceholder('Oops! You have to type a task before adding it');
+        }
     }
 
     return (
@@ -34,7 +35,7 @@ function TodoForm () {
             <textarea 
                 value={newTodoValue}
                 onChange={onChange}
-                placeholder='Finish my homework'
+                placeholder={newPlaceholder}
             />
             <div className='buttons-container'>
                 <button 

@@ -9,9 +9,10 @@ function TodosContainer ({ searchedTodos, toggleCompleteTodo, deleteTodo }) {
             <TodoSearch /> 
             <TodoList>
                 { 
-                    searchedTodos.map(todo => (
+                    searchedTodos.map((todo, index) => (
                     <TodoItem 
-                        key={todo.id} 
+                        // key={todo.text} 
+                        key={index} 
                         text={todo.text} 
                         completed={todo.completed}
                         onComplete={() => toggleCompleteTodo(todo.text)}
