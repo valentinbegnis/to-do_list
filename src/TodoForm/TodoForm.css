@@ -52,14 +52,23 @@ textarea::placeholder {
     font-size: .9rem;
     letter-spacing: .1rem;
     color: var(--primary-text-color);
+    cursor: pointer;
 }
 
 button:first-child {
     background-color: var(--contrast-color);
 }
 
+button:first-child:hover {
+    background-color: #e25672;
+}
+
 button:nth-child(2) {
-    background-color: #62a164;
+    background-color: #499c4b;
+}
+
+button:nth-child(2):hover {
+    background-color: #408641;
 }
 
 @media (min-width: 400px) {
