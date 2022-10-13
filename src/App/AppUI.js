@@ -22,7 +22,7 @@ function AppUI () {
     <React.Fragment>
       <Header />
       {
-        (localStorage.getItem('TODOS_V1') === '[]')
+        (localStorage.getItem('TODOS_V1') === '[]' || localStorage.getItem('TODOS_V1') === null)
           ? <EmptyTodos />
           : <TodosContainer
                 searchedTodos={searchedTodos}
