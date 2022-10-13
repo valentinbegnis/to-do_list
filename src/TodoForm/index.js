@@ -41,10 +41,11 @@ function TodoForm () {
                 <button 
                     onClick={onCancel}
                     type='button'
+                    cursor='pointer'
                 >
                     Cancel
                 </button>
-                <button type='submit'>Add</button>
+                <button type='submit' cursor='pointer'>Add</button>
             </div>
         </form>
     );
